@@ -35,7 +35,7 @@ RUN adduser --disabled-password --gecos '' appuser
 USER appuser
 
 # Expose port 8000 to the outside world
-EXPOSE 8080
+EXPOSE 8000
 
 # Run the application using Gunicorn
 # -w 4: Uses 4 worker processes (adjust based on CPU cores: 2 * cores + 1)
