@@ -5,3 +5,4 @@ gunicorn==20.1.0
 firebase-admin==6.0.1
 uvicorn
 fastapi
+Werkzeug==2.2.3
