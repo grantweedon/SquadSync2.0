@@ -34,11 +34,11 @@ COPY . .
 RUN adduser --disabled-password --gecos '' appuser
 USER appuser
 
-# Expose port 8000 to the outside world
-EXPOSE 8000
+# Expose port 8080 to the outside world
+EXPOSE 8080
 
 # Run the application using Gunicorn
 # -w 4: Uses 4 worker processes (adjust based on CPU cores: 2 * cores + 1)
-# -b 0.0.0.0:8080: Binds to all interfaces on port 8000
+# -b 0.0.0.0:8080: Binds to all interfaces on port 8080
 # main:app: Looks for the 'app' object in 'main.py'
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8000", "main:app"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8080", "main:app"]
