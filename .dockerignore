@@ -6,6 +6,7 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
+.git
 env/
 pip-log.txt
 pip-delete-this-directory.txt
@@ -13,3 +14,4 @@ pip-delete-this-directory.txt
 .vscode/
 serviceAccountKey.json
 *.md
+venv/
