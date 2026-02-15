@@ -1,0 +1,5 @@
+{
+  "name": "SquadSync",
+  "description": "A weekend availability coordinator for a group of friends. Users can toggle their availability status for upcoming weekends, and the app automatically identifies and shortlists dates where everyone is free using the Gemini API.",
+  "requestFramePermissions": []
+}
